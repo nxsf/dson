@@ -20,7 +20,7 @@ jobs:
       run: gem install asciidoctor
 
     - name: Compile the specification
-      run: asciidoctor .\spec.adoc -o build/index.html
+      run: asciidoctor spec.adoc -o build/index.html
 
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@3.5.9

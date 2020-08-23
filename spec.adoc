@@ -1,0 +1,34 @@
+= Dead-Simple Object Notation Data Interchange Format
+:doctype: book
+:numbered:
+:revnumber: 0
+:revremark: Draft
+:numbered:
+:idprefix:
+:idseparator: -
+
+The Dead-Simple Object Notation (DSON) is a format for simpler data interchange.
+
+[preface]
+= Preface
+
+JSON is the only human-readable format to serving well for the purpose of describing complex, nested data structures.
+YAML and TOML are a better choice for configuration purposes rather than for interchanging object instances.
+
+Unluckily, the JSON format inherits from Javascript.
+It is quite wordy due to the ubiquitous double quotes.
+In certain situations, JSON brings unneeded complexity with its built-in types.
+On top of that, the JSON format does not allow comments.
+
+The Dead-Simple Object Notation (DSON) is a data interchange format intended to be intuitive, forgiving and human-readable.
+The standard attempts to define the simplest possible interchange format yet enough to describe complex nested structures.
+
+```dson
+{
+  'Is DSON simple?' = true, # Indeed
+  rules = [
+    "Non-ASCII, control (< %x20), quotes \
+      and whitespace characters must be quoted",
+  ]
+}
+```
